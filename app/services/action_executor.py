@@ -114,6 +114,7 @@ class ActionExecutor:
         paths = {
             NavigateTarget.CAREER_CATALOGS: "/career/catalogs",
             NavigateTarget.VAULT_SERVICES: "/vault/services",
+            NavigateTarget.CAREER_PORTALS: "/career/portals",
         }
         if target_enum is None:
             path = None
@@ -134,6 +135,7 @@ class ActionExecutor:
             "experiences": "experiencias",
             "applications": "postulaciones",
             "career-catalogs": "datos reutilizables",
+            "career-portals": "portales de ofertas",
             "vault-services": "servicios de bóveda",
         }
         label = labels.get(target or "", target or "destino desconocido")

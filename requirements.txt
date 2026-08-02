@@ -5,6 +5,8 @@ pydantic>=2.10.0
 pydantic-settings>=2.6.0
 python-multipart>=0.0.17
 python-dotenv>=1.0.1
+# Captura de portales de ofertas (opcional):
+# playwright
 # Opcional para transcripción local:
 # openai-whisper
 # torch

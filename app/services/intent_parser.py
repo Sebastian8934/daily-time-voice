@@ -97,6 +97,7 @@ _CAREER_KIND_LABEL = (
 
 NAV_MAP: list[tuple[re.Pattern[str], NavigateTarget]] = [
     (re.compile(r"\b(datos reutilizables|catalogos? de carrera|catalogos? carrera)\b"), NavigateTarget.CAREER_CATALOGS),
+    (re.compile(r"\bportales?(?:\s+de\s+ofertas?)?\b"), NavigateTarget.CAREER_PORTALS),
     (re.compile(r"\bservicios?\s+de\s+(la\s+)?boveda\b"), NavigateTarget.VAULT_SERVICES),
     (re.compile(r"\bexperiencias?(?:\s+laborales?)?\b"), NavigateTarget.EXPERIENCES),
     (re.compile(r"\b(postulaciones?|solicitudes?)\b"), NavigateTarget.APPLICATIONS),

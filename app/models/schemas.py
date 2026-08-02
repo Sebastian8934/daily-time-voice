@@ -90,6 +90,7 @@ class NavigateTarget(str, Enum):
     APPLICATIONS = "applications"
     CAREER_CATALOGS = "career-catalogs"
     VAULT_SERVICES = "vault-services"
+    CAREER_PORTALS = "career-portals"
 
 
 class ParsedIntent(BaseModel):

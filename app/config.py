@@ -10,12 +10,12 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    daily_time_api_url: str = "https://localhost:7169"
+    daily_time_api_url: str = "https://localhost:5110"
     voice_api_host: str = "0.0.0.0"
-    voice_api_port: int = 8000
+    voice_api_port: int = 5400
     enable_whisper: bool = False
     default_work_date: str | None = None
-    frontend_origins: str = "http://localhost:3000"
+    frontend_origins: str = "http://localhost:4010"
 
     @property
     def cors_origins(self) -> list[str]:
